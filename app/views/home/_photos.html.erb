@@ -1,0 +1,34 @@
+<style>
+  body{
+    margin:0;
+    padding:0;
+    background:#001;
+  }
+ul.photos img{
+  height:200px;
+  display:inline;
+}
+
+ul.photos{
+  margin:0 auto;
+  padding:10px;
+  height:180px;
+  overflow:hidden;
+  
+}
+
+ul.photos li{
+  list-style:none;
+  display:inline;
+}
+
+
+</style>
+
+
+<ul class="photos">
+<% @photos.each do |pic| %>
+  <%# make this a definition list so you can put a caption %>
+  <li><%= image_tag pic %></l1>
+<% end %>
+</ul>
