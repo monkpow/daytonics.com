@@ -1,6 +1,57 @@
+<%
 
-<p class="shows">
-the Daytonics next appearance is July 27th, with Dap Tone Records Naomi Shelton, at the Empty Bottle in Chicago.
-</p>
+  shows = [
+    {
+    :when  => Date.new(2010, 07, 23),
+    :who   => "Milwaukee Ave Arts Fest, MAAF South Stage",
+    :where => "Logan Square"
+  },
+
+  {
+    :when  => Date.new(2010, 07, 27),
+    :who   => "Naomi Shelton & the Gospel Queens, JC Brown and the Uptown Sound",
+    :where => "Empty Bottle, Chicago"
+  },
+
+  {
+    :when  => Date.new(2010, 8, 27),
+    :who   => "TBA",
+    :where => "Quenchers"
+  }
+
+  ]
+
+%>
+
+
+
+<div class="shows">
+  <h3>Upcoming Shows</h3>
+  <table class="gigs">
+    <!--<tr>-->
+      <!--<th>when?</th> -->
+      <!--<th>when?</th>-->
+      <!--<th>who else?</th>-->
+      <!--<th>where</th>-->
+      <!--<th>what?</th>-->
+      <!--</tr>-->
+    <% shows.each do |show| %>
+      <%  %w(when who where).each do |key| 
+        data = show[key.to_sym]
+        @results = ''
+        if data.class == Date
+          @results = data.strftime(fmt="%a, %b %d")
+        else
+          @results = data
+        end
+      %>
+      <td><%= @results %></td>
+    <% end %>
+  </tr>
+<% end %>
+  </table>
+</div>
+</table>
+</dib>
 
 
