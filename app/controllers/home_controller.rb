@@ -8,8 +8,7 @@ class HomeController < ApplicationController
     @photos = d.map do |n|
       '/images/photos/band/' + n
     end
-    @photos.shift  # cheap-ass way to remove '.'
-    @photos.shift  # cheap-ass way to remove '..'
+    @photos.reject! do |path| path.match /\.$/ end
     @photos = @photos.sort_by {rand}
   end
 
