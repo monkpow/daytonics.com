@@ -1,0 +1,105 @@
+/* Primary Styles
+Author:  nkrimm
+ */
+
+
+/*
+ *272a44 darkbule
+ * dccd9a yellow
+ * 9b2e2b red
+ * */
+body {
+  background:#9b2e2b;
+  color:#dccd9a;
+}
+
+
+#container{
+  width:980px;
+  margin:10px auto;
+}
+
+#main{
+  width:980px;
+}
+
+
+.cols{
+  width:100%;
+  overflow:hidden;
+  padding:10px 0;
+}
+
+.col{
+  float:left;
+}
+
+
+.col_1{
+  width:250px;
+}
+
+.col_2{
+  width:700px;
+}
+
+.col .content{
+  -moz-border-radius:10px;
+  background:#272a44;
+  padding:10%;
+  width:70%;
+  margin:0 10%;
+  -moz-box-shadow: 1px 1px 5px #444;
+  -webkit-box-shadow: 1px 1px 5px #444;
+  box-shadow: 1px 1px 5px #444;
+}
+
+.col_1 .content{
+  margin:5px 10px;
+  padding:20px;
+  width:200px;
+}
+
+
+.col_2 .content{
+  margin:5px 10px 5px 15px;
+  padding:20px;
+  width:660px;
+}
+
+
+
+.content h3{
+font-size:24pt;
+border-bottom:3px solid #dccd9a;
+}
+
+.content .module{
+margin:10px 0;
+overflow:hidden;
+}
+
+
+ul.photos img{
+  height:135px;
+  display:inline;
+}
+
+ul.photos {
+  float:right;
+  height:135px;
+  margin:10px;
+  overflow:hidden;
+  padding:0;
+}
+
+ul.photos li{
+  list-style:none;
+  display:inline;
+  margin:10px;
+}
+
+
+h1, h2, h3{
+  font-family:'Lobster', arial, serif;
+}
