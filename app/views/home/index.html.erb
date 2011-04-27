@@ -1,8 +1,28 @@
-<%= render :partial => 'photos' %>
-<h1>the Daytonics</h1>
-<h2>goddamn!</h2>
-<div class="content">
-<%= render :partial => 'shows' %>
-<%= render :partial => 'mailing_list' %>
+<div class="cols">
+  <div class="col col_1">
+    <div class="content">
+      <%# render :partial => 'flyer' %>
+      <%= image_tag 'photos/band/IMG_8343.JPG', :width => '200px' %>
+      <%# render :partial => 'photos' %>
+      <h1>the Daytonics</h1>
+      <h2>goddamn!</h2>
+    </div>
+
+  </div>
+
+  <div class="col col_2">
+    <div class="content">
+      <div class="module">
+        <%# render :partial => 'shows' %>
+      </div>
+      <div class="module">
+        <%= render :partial => 'videos' %>
+      </div>
+      <div class="module">
+        <%= render :partial => 'photos' %>
+      </div>
+    </div>
+  </div>
 </div>
+
 
